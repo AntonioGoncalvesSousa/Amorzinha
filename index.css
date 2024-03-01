@@ -3,4 +3,65 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;    
+}
 
+/* INDEX */
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 78, 78);
+    justify-content: space-between;
+}
+
+.container .mid{
+    display: flex;
+    width: 20vw;
+    height: 100%;
+}
+
+.container .img{
+    display: flex;
+    width: 40vw;
+    height: 100%;
+}
+
+.container .img img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* HOME */
+
+.back{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imgs/multi-cor-de-fundo-de-cor-roxa-azul-e-rosa-modelo-de-banner-fundo-gradiente-borrado-abstrato_335640-483.avif);
+    background-size: cover;
+    flex-direction: column;
+}
+
+.back .header{
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background-color: black;
+
+}
+
+.back .content {
+    display: flex;
+    width: 100%;
+    height: 88%;
+    justify-content: center;
+}
+
+.back .content img{
+    display: flex;
+    height: 100%;
+}
