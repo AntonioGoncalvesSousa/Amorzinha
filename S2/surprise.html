@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabens vida &#10084;</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --black: #010001;
+            --main-color-blue: #4A5899;
+            --secondary-color-puce: #DB7F8E;
+            --secondary-color-rose: #FFDBDA;
+            --text-color: #333;
+            --font-especial: 'Dancing Script', cursive;
+            --font-normal: Roboto, cursive;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-especial);
+            letter-spacing: 2px;
+        }
+
+        .content {
+            background-color: var(--black);
+            width: 100vw;
+            height: 300vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: var(--secondary-color-rose);
+        }
+
+        .foto {
+            width: 80%;
+            height: 70vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 3px groove var(--secondary-color-rose);
+            border-radius: 10px;
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .foto img.active {
+            opacity: 1;
+        }
+
+        .text {
+            width: 80%;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 90%;
+            height: 30%;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 45%;
+        }
+
+        .song {
+            width: 80%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .picture {
+            height: 70%;
+            background-color: var(--main-color-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .picture img {
+            height: 90%;
+        }
+
+        .audioClass {
+            width: 100%;
+            height: 20%;
+            background-color: var(--main-color-blue);
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .timer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="container">
+            <h1>Parabens meu amor🎉🥳</h1>
+            <div class="foto">
+                <img src="images/1.jpeg" class="active">
+                <img src="images/2.jpeg">
+                <img src="images/3.jpeg">
+                <img src="images/4.jpeg">
+                <img src="images/5.jpeg">
+            </div>
+            <h1>🎈❤️Eu te amo🎈❤️</h1>
+        </div>
+        <div class="container">
+            <div class="text">
+
+                <h3>
+                    Oiie, meu bem.
+                    <br>
+                    <br>
+                    Hoje é um dia mais do que especial. Gostaria de te desejar os parabéns e te dizer o quanto você é
+                    incrível.
+                    <br>
+                    <br>
+                    Desde que te conheci, nunca consegui passar um dia sequer sem lembrar do seu sorriso lindo. Você é
+                    minha inspiração, minha paz e meu melhor presente todos os dias.
+                    <br>
+                    <br>
+                    Quero que saiba o quanto eu te amo e o quanto sou grato por ter você ao meu lado. Que seu
+                    aniversário seja tão lindo quanto você e tão doce quanto o seu coração. Feliz aniversário, meu amor!
+                    Que essa nova fase te traga ainda mais felicidade e sonhos realizados. 🥰🎂
+                    <br>
+                    <br>
+                    Com todo o meu amor,
+                    <br>
+                    Tonhão ❤️
+                </h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h1>Eu te amo a ...</h1>
+                <div class="timer" id="timer">Carregando...</div>
+            </div>
+
+            <div class="box">
+                <h3 class="text">
+                    Mas ...
+                    <br>
+                    não da para negar que o nosso amor foi a primeira vista, então eu escolhi essa musica pra gente
+                    meu bem.
+                    <br>
+                    Espero que goste.
+                </h3>
+            </div>
+
+            <div class="box2">
+                <div class="song">
+                    <div class="picture">
+                        <img src="images/WhatsApp Image 2025-03-29 at 2.08.03 AM.jpeg" alt="1">
+                    </div>
+                    <audio controls class="audioClass">
+                        <source
+                            src="song/A música do Tchan da Mavis e do Johnny _ Hotel Transilvânia _ Clipe [lCIaAXy-MNw].mp3"
+                            type="audio/mpeg">
+                    </audio>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="all.js" defer></script>
